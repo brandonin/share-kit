@@ -171,7 +171,7 @@ Format of proof object used to perform merkle proof
 {
   "bloom_id": 299,
   "token": "a08714b92346a1bba4262ed575d23de3ff3e6b5480ad0e1c82c011bab0411fdf",
-  "signature": "0x4ee64886332a9d4fb480dfea0308264c1b56eb8293792d47696f6df2f1c36e1836deab53c46954fdcf0dc1f7ff7a6e7f6ac83039b597cc0f99192d1e8455b11b1b"
+  "signature": "0x4ee64886332a9d4fb480dfea0308264c1b56eb8293792d47696f6df2f1c36e1836deab53c46954fdcf0dc1f7ff7a6e7f6ac83039b597cc0f99192d1e8455b11b1b",
   "data": [
     {
       "tx": "0xe1f7b9603bd8d71927b9aabf88be14342964b4f4abc673a5e0f8dcbbd7c610e8",
@@ -351,7 +351,7 @@ import {RequestQRCode, RequestData} from '@bloomprotocol/share-kit'
 
 const MyComponent: React.SFC = props => {
   const requestData: RequestData = {...}
-  return <RequestQRCode signinDataRequest={signinDataRequest} size={200} />
+  return <RequestQRCode requestData={requestData} size={200} />
 }
 ```
 
